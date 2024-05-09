@@ -1,4 +1,4 @@
-let launchingDay = new Date().setDate(new Date().getDate() + 8);
+let launchingDay = new Date().setDate(new Date().getDate() + 14);
 const daysValue = document.querySelector("#days");
 const hoursValue = document.querySelector("#hours");
 const minutesValue = document.querySelector("#minutes");
@@ -20,10 +20,10 @@ function updateCountdown() {
   showUpdatedValues(days, hours, minutes, seconds);
 }
 function showUpdatedValues(days, hours, minutes, seconds) {
-  daysValue.innerHTML = `0${days}`;
-  hoursValue.innerHTML = `${hours}`;
-  minutesValue.innerHTML = `${minutes}`;
-  secondsValue.innerHTML = `${seconds}`;
+  daysValue.innerHTML = `${String(days).padStart(2, "0")}`;
+  hoursValue.innerHTML = `${String(hours).padStart(2, "0")}`;
+  minutesValue.innerHTML = `${String(minutes).padStart(2, "0")}`;
+  secondsValue.innerHTML = `${String(seconds).padStart(2, "0")}`;
 }
 
 setInterval(updateCountdown, 1000);
