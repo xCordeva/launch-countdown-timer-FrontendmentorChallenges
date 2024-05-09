@@ -21,38 +21,42 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 .main h3 {
   color: white;
   letter-spacing: 8px;
+  width: 100%;
+  text-align: center;
 }
-.main .timer-item {
+.main .timer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .timer .timer-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: hsl(345, 95%, 68%);
+  width: 80%;
+  perspective: 1000px; /* Enables 3D transformations */
+  position: relative;
 }
-.main .timer-item .number {
-  font-size: 3.5rem;
-}
-.main .timer-item p {
-  color: hsl(237, 18%, 59%);
-  letter-spacing: 2px;
-}
-
-.timer {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  width: 600px;
-  justify-content: space-between;
-}
-
-.card {
+.main .timer .timer-item .card {
   width: 120px;
+  max-width: 80%;
   height: 110px;
   perspective: 1000px; /* Enables 3D transformations */
   position: relative;
+}
+.main .timer .timer-item .number {
+  font-size: 3rem;
+}
+.main .timer .timer-item p {
+  color: hsl(237, 18%, 59%);
+  letter-spacing: 2px;
 }
 
 #top-half {
@@ -126,4 +130,10 @@ body {
 }
 .attribution a:hover {
   color: hsl(345, 95%, 68%);
+}
+
+@media (max-width: 500px) {
+  .timer {
+    scale: 0.7;
+  }
 }/*# sourceMappingURL=style.css.map */
