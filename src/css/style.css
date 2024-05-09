@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "RedHatText";
+  src: url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+}
+body {
+  font-family: "RedHatText", sans-serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  height: 100dvh;
+  background-color: hsl(235, 16%, 14%);
+  background-image: url(/images/bg-stars.svg), url(/images/pattern-hills.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, bottom;
+  background-size: cover, contain;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.icons {
+  position: bottom;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.icons svg {
+  cursor: pointer;
+}
+.icons svg path:hover {
+  transition: 0.5s;
+  fill: hsl(345, 95%, 68%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
