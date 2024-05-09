@@ -9,7 +9,7 @@ body {
   margin: 0;
   height: 100dvh;
   background-color: hsl(235, 16%, 14%);
-  background-image: url(/images/bg-stars.svg), url(/images/pattern-hills.svg);
+  background-image: url(../../images/bg-stars.svg), url(../../images/pattern-hills.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: center, bottom;
   background-size: cover, contain;
